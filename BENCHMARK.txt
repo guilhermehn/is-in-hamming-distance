@@ -1,0 +1,10 @@
+isInHammingDistance (with greater limit) x 22,719,617 ops/sec ±0.90% (90 runs sampled)
+isInHammingDistance (with smaller limit) x 31,701,725 ops/sec ±0.77% (93 runs sampled)
+
+  System:
+    OS: Linux 5.3 Ubuntu 19.10 (Eoan Ermine)
+    CPU: (8) x64 Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
+    Memory: 10.54 GB / 15.52 GB
+    Container: Yes
+    Shell: 5.0.3 - /bin/bash
+
