@@ -4,40 +4,23 @@
   "description": "Returns true if the hamming distance between two strings or arrays of equal length is smaller than the given limit",
   "main": "index.mjs",
   "scripts": {
-    "test": "jest",
+    "test": "node --test spec.mjs",
     "benchmark": "node benchmark.js > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
     "docs": "jsdoc2md -f index.js | prettier --parser=markdown > API.md",
     "prerelease": "npm test && npm run benchmark && npm run docs && git add BENCHMARK.txt API.md",
     "release": "standard-version --commit-all"
   },
   "engines": {
-    "node": ">= 8"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coveragePathIgnorePatterns": ["benchmark.js"],
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
+    "node": ">= 18"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
-    "plugins": [
-      "jest"
-    ],
     "parserOptions": {
       "ecmaVersion": 2020
     },
     "env": {
       "es6": true,
-      "node": true,
-      "jest/globals": true
+      "node": true
     }
   },
   "commitlint": {
@@ -74,9 +57,7 @@
     "benchmark": "^2.1.4",
     "envinfo": "^7.5.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-jest": "^23.8.2",
     "husky": "^4.2.5",
-    "jest": "^25.4.0",
     "jsdoc-to-markdown": "^8.0.0",
     "lint-staged": "^10.1.7",
     "prettier": "^2.0.5",
