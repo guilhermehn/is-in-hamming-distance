@@ -1,4 +1,4 @@
-const assert = require("assert").strict;
+import { strict as assert } from "node:assert";
 
 /**
  * Returns true if the hamming distance between two strings or arrays of equal length is smaller than the given limit
@@ -16,19 +16,17 @@ const assert = require("assert").strict;
  * console.log(isInHammingDistance(1, 'karolin', 'kathrin'));
  * // => false
  */
-function isInHammingDistance(limit, a, b) {
-	assert.strictEqual(a.length, b.length, "Values should have equal length");
+export default function isInHammingDistance(limit, a, b) {
+    assert.strictEqual(a.length, b.length, "Values should have equal length");
 
-	let distance = 0;
+    let distance = 0;
 
-	for (let i = 0; i < a.length; i++) {
-		if (a[i] !== b[i]) {
-			if (++distance > limit) {
-				return false;
-			}
-		}
-	}
-	return true;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            if (++distance > limit) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
-
-module.exports = isInHammingDistance;

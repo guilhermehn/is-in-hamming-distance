@@ -2,7 +2,7 @@
   "name": "is-in-hamming-distance",
   "version": "1.0.0",
   "description": "Returns true if the hamming distance between two strings or arrays of equal length is smaller than the given limit",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "jest",
     "benchmark": "node benchmark.js > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
