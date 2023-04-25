@@ -1,7 +1,7 @@
-const isInHammingDistance = require(".");
-const { Suite } = require("benchmark");
+import isInHammingDistance from "./index.mjs";
+import benchmark from "benchmark";
 
-new Suite()
+new benchmark.Suite()
 	.add("isInHammingDistance (with greater limit)", () => {
 		isInHammingDistance(4, "2173896", "2233796");
 	})

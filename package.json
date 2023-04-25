@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "test": "node --test spec.mjs",
-    "benchmark": "node benchmark.js > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
+    "benchmark": "node benchmark.mjs > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
     "docs": "jsdoc2md -f index.js | prettier --parser=markdown > API.md",
     "prerelease": "npm test && npm run benchmark && npm run docs && git add BENCHMARK.txt API.md",
     "release": "standard-version --commit-all"
