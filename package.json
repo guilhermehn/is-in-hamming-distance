@@ -29,13 +29,13 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
+    "*.mjs": [
       "prettier --write",
       "eslint --fix",
-      "jest --collectCoverage --findRelatedTests"
+      "npm --test spec.mjs #"
     ],
     "*.md": [
-      "prettier --parser=markdown --write"
+      "prettier --write"
     ]
   },
   "keywords": [
@@ -52,8 +52,8 @@
     "envinfo": "^7.5.0",
     "eslint": "^8.39.0",
     "husky": "^8.0.3",
-    "lint-staged": "^10.1.7",
-    "prettier": "^2.0.5",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.8",
     "standard-version": "^9.5.0"
   }
 }
