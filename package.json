@@ -6,7 +6,6 @@
   "scripts": {
     "test": "node --test spec.mjs",
     "benchmark": "node benchmark.mjs > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
-    "docs": "jsdoc2md -f index.js | prettier --parser=markdown > API.md",
     "prerelease": "npm test && npm run benchmark && npm run docs && git add BENCHMARK.txt API.md",
     "release": "standard-version --commit-all",
     "prepare": "husky install"
@@ -53,7 +52,6 @@
     "envinfo": "^7.5.0",
     "eslint": "^8.39.0",
     "husky": "^8.0.3",
-    "jsdoc-to-markdown": "^8.0.0",
     "lint-staged": "^10.1.7",
     "prettier": "^2.0.5",
     "standard-version": "^9.5.0"
