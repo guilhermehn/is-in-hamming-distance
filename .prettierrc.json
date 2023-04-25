@@ -1,4 +1,10 @@
 {
 	"useTabs": true,
-	"singleQuote": true
+	"singleQuote": true,
+    {
+      "files": "*.yml",
+      "options": {
+        "useTabs": false
+      }
+    }
 }
