@@ -1,10 +1,10 @@
-isInHammingDistance (with greater limit) x 34,211,431 ops/sec ±0.39% (96 runs sampled)
-isInHammingDistance (with smaller limit) x 44,244,681 ops/sec ±0.47% (95 runs sampled)
+isInHammingDistance (with greater limit) x 29,821,102 ops/sec ±3.40% (87 runs sampled)
+isInHammingDistance (with smaller limit) x 30,254,603 ops/sec ±8.57% (69 runs sampled)
 
   System:
     OS: Linux 5.19 Ubuntu 22.04.2 LTS 22.04.2 LTS (Jammy Jellyfish)
     CPU: (8) x64 Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz
-    Memory: 25.77 GB / 31.23 GB
+    Memory: 24.53 GB / 31.23 GB
     Container: Yes
     Shell: 5.1.16 - /bin/bash
 
