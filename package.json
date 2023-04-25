@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node --test spec.mjs",
     "benchmark": "node benchmark.mjs > BENCHMARK.txt && envinfo --system >> BENCHMARK.txt",
-    "prerelease": "npm test && npm run benchmark && npm run docs && git add BENCHMARK.txt API.md",
+    "prerelease": "npm test && npm run benchmark && git add BENCHMARK.txt",
     "release": "standard-version --commit-all",
     "prepare": "husky install"
   },
